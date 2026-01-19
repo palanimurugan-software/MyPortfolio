@@ -1,21 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Developer Portfolio</title>
+  <meta charset="UTF-8">
+
+  <!-- 🌍 SEO Meta -->
+  <title>Palani — Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Palani — Full-stack developer specializing in Angular, Node.js & MySQL. Passionate about modern UI & scalable web apps.">
+  <meta name="keywords" content="Palani, Portfolio, Angular Developer, Node.js, MySQL, Full Stack">
+  <meta name="author" content="Palani">
+
+  <!-- 📱 Mobile Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ⚡ Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:white;
+      scroll-behavior:smooth;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      padding:20px 60px;
+      position:sticky;
+      top:0;
+      background:#020617ee;
+    }
+
+    .hero{
+      text-align:center;
+      padding:100px 20px;
+      animation:fadeIn 1.2s ease;
+    }
+
+    .hero img{
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      border:3px solid #38bdf8;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+    }
+
+    section{
+      background:#020617;
+      margin:30px;
+      padding:25px;
+      border-radius:14px;
+    }
+
+    h2{color:#38bdf8;}
+
+    /* 🔗 Social Links */
+    .social a{
+      color:white;
+      margin-right:12px;
+      text-decoration:none;
+      padding:8px 14px;
+      border-radius:20px;
+      background:#1e293b;
+    }
+
+    /* 📌 Projects Grid */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .card{
+      background:#0f172a;
+      padding:18px;
+      border-radius:12px;
+      border:1px solid #1e293b;
+    }
+
+    /* 🧑‍💻 Experience Timeline */
+    .timeline div{
+      margin-bottom:15px;
+      padding-left:10px;
+      border-left:3px solid #38bdf8;
+    }
+
+    footer{ text-align:center; padding:20px; opacity:.6; }
+
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  </style>
 </head>
+
 <body>
-  <h1>Hi, I'm Palani 👋</h1>
-  <p>Full-stack Developer — Angular | Node.js | MySQL</p>
 
+<nav>
+  <div><b>Palani 👨‍💻</b></div>
+  <div class="social">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Resume</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="https://via.placeholder.com/150">
+  <h1>Hello 👋 I'm <span style="color:#38bdf8">Palani</span></h1>
+  <p>Full-Stack Developer — Angular | Node.js | MySQL</p>
+</div>
+
+<div class="container">
+
+<section>
+  <h2>About Me</h2>
+  <p>I build fast, modern & secure web applications. Focused on UI, performance & user experience.</p>
+</section>
+
+<section>
   <h2>Projects</h2>
-  <ul>
-    <li>E-commerce Website — Angular + Node.js</li>
-    <li>Payment Integration — Paytm / Stripe</li>
-    <li>PDF Report Automation</li>
-  </ul>
+  <div class="grid">
+    <div class="card">
+      <b>🚀 Project 1</b><br>
+      E-commerce platform with Node.js & Angular
+    </div>
+    <div class="card">
+      <b>📊 Project 2</b><br>
+      Dashboard with analytics & authentication
+    </div>
+    <div class="card">
+      <b>💳 Project 3</b><br>
+      Payment Integration (Razorpay / Paytm)
+    </div>
+  </div>
+</section>
 
+<section>
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div>
+      <b>Software Developer</b><br>
+      Built full-stack applications & APIs
+    </div>
+    <div>
+      <b>Freelance Developer</b><br>
+      Delivered custom business web apps
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Contact</h2>
-  <p>Email: yourmail@email.com</p>
-  <p>LinkedIn: your profile link</p>
+  <p>Email: your@email.com</p>
+</section>
+
+</div>
+
+<footer>
+  © 2026 — Palani
+</footer>
+
 </body>
 </html>
