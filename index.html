@@ -1,168 +1,321 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palani Murugan A | Senior Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
 
-  <!-- 🌍 SEO Meta -->
-  <title>Palani — Full-Stack Developer Portfolio</title>
-  <meta name="description" content="Palani — Full-stack developer specializing in Angular, Node.js & MySQL. Passionate about modern UI & scalable web apps.">
-  <meta name="keywords" content="Palani, Portfolio, Angular Developer, Node.js, MySQL, Full Stack">
-  <meta name="author" content="Palani">
+body {
+    background: #ffffff;
+    color: #1e293b;
+    line-height: 1.7;
+}
 
-  <!-- 📱 Mobile Responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
-  <!-- ⚡ Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+.header {
+    background: #0f172a;
+    color: #fff;
+    padding: 70px 0;
+    text-align: center;
+}
 
-  <style>
-    body{
-      margin:0;
-      font-family:'Poppins',sans-serif;
-      background:#0f172a;
-      color:white;
-      scroll-behavior:smooth;
-    }
+.header h1 {
+    font-size: 42px;
+}
 
-    nav{
-      display:flex;
-      justify-content:space-between;
-      padding:20px 60px;
-      position:sticky;
-      top:0;
-      background:#020617ee;
-    }
+.header h2 {
+    font-weight: 400;
+    margin-top: 10px;
+}
 
-    .hero{
-      text-align:center;
-      padding:100px 20px;
-      animation:fadeIn 1.2s ease;
-    }
+.contact {
+    margin-top: 15px;
+}
 
-    .hero img{
-      width:130px;
-      height:130px;
-      border-radius:50%;
-      border:3px solid #38bdf8;
-    }
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
 
-    .container{
-      max-width:1000px;
-      margin:auto;
-    }
+.section {
+    padding: 60px 0;
+}
 
-    section{
-      background:#020617;
-      margin:30px;
-      padding:25px;
-      border-radius:14px;
-    }
+.section.gray {
+    background: #f1f5f9;
+}
 
-    h2{color:#38bdf8;}
+.section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
 
-    /* 🔗 Social Links */
-    .social a{
-      color:white;
-      margin-right:12px;
-      text-decoration:none;
-      padding:8px 14px;
-      border-radius:20px;
-      background:#1e293b;
-    }
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0f172a;
+}
 
-    /* 📌 Projects Grid */
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:15px;
-    }
+.project {
+    margin-bottom: 35px;
+}
 
-    .card{
-      background:#0f172a;
-      padding:18px;
-      border-radius:12px;
-      border:1px solid #1e293b;
-    }
+.project ul {
+    margin: 10px 0 10px 20px;
+}
 
-    /* 🧑‍💻 Experience Timeline */
-    .timeline div{
-      margin-bottom:15px;
-      padding-left:10px;
-      border-left:3px solid #38bdf8;
-    }
+.project span {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #475569;
+}
 
-    footer{ text-align:center; padding:20px; opacity:.6; }
+.skills span {
+    display: inline-block;
+    background: #0f172a;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+}
 
-    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-  </style>
+.footer {
+    background: #0f172a;
+    color: #cbd5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+    </style>
 </head>
 
 <body>
 
-<nav>
-  <div><b>Palani 👨‍💻</b></div>
-  <div class="social">
-    <a href="#">LinkedIn</a>
-    <a href="#">GitHub</a>
-    <a href="#">Resume</a>
-  </div>
-</nav>
+<header class="header">
+    <div class="container">
+        <h1>Palani Murugan A</h1>
+        <h2>Senior Software Engineer</h2>
+        <p>Madurai, Tamil Nadu, India</p>
+        <div class="contact">
+            <a href="mailto:iampalanimurugan@gmail.com">iampalanimurugan@gmail.com</a>
+            <span>|</span>
+            <a href="tel:+918220966518">+91 8220966518</a>
+             <span>|</span>
+             <a href="https://www.linkedin.com/in/palani-murugan-a-9aa7792a0/" target="_blank">LinkedIn</a>
+              <span>|</span>
+               <a href="https://github.com/iampalanimurugan-cpu" target="_blank">GitHub</a>
+        </div>
+    </div>
+</header>
 
-<div class="hero">
-  <img src="https://via.placeholder.com/150">
-  <h1>Hello 👋 I'm <span style="color:#38bdf8">Palani</span></h1>
-  <p>Full-Stack Developer — Angular | Node.js | MySQL</p>
-</div>
+ 
 
-<div class="container">
 
-<section>
-  <h2>About Me</h2>
-  <p>I build fast, modern & secure web applications. Focused on UI, performance & user experience.</p>
+<section class="section">
+    <div class="container">
+        <h3>Professional Summary</h3>
+        <p>
+            Detail-oriented and growth-driven software professional with 4+ years of progressive
+            experience in developing scalable web applications and business intelligence solutions.
+            Proven track record of growing from Junior Software Engineer to Senior Software Engineer.
+            Expertise in MEAN stack development, MySQL optimization, cloud deployment, and Agile
+            leadership. Passionate about delivering high-quality applications aligned with business goals.
+        </p>
+    </div>
 </section>
 
-<section>
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <b>🚀 Project 1</b><br>
-      E-commerce platform with Node.js & Angular
+<section class="section gray">
+    <div class="container">
+        <h3>Employment History</h3>
+
+        <div class="card">
+            <h4>Senior Software Engineer</h4>
+            <span>MegSoft Business Solutions Pvt Ltd | May 2023 – Present</span>
+        </div>
+
+        <div class="card">
+            <h4>Application Developer</h4>
+            <span>Chrono Infotech | Mar 2022 – Mar 2023</span>
+        </div>
+
+        <div class="card">
+            <h4>Internship</h4>
+            <span>Harisan Technologies | Nov 2021 – Mar 2022</span>
+        </div>
+
+        <div class="card">
+            <h4>Marketing, Sales Executive & Customer Support</h4>
+            <span>Bajaj Finserv | Mar 2021 – Sep 2021</span>
+        </div>
+
+        <div class="card">
+            <h4>TellCaller, Design & Customer Care Executive</h4>
+            <span>Madurai Friends Track Call Taxi | Jun 2015 – Mar 2021</span>
+        </div>
+
+        <div class="card">
+            <h4>New Paper Maker</h4>
+            <span>Nine Star Infotech | Jun 2017 – Sep 2017</span>
+        </div>
     </div>
-    <div class="card">
-      <b>📊 Project 2</b><br>
-      Dashboard with analytics & authentication
-    </div>
-    <div class="card">
-      <b>💳 Project 3</b><br>
-      Payment Integration (Razorpay / Paytm)
-    </div>
-  </div>
 </section>
 
-<section>
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div>
-      <b>Software Developer</b><br>
-      Built full-stack applications & APIs
+<section class="section">
+    <div class="container">
+        <h3>Projects</h3>
+
+        <div class="project">
+            <h4>Order Management System (OMS) – Mikes Refrigerated Transportation, USA</h4>
+            <p>
+                Customized web & mobile application for trucking operations including order creation,
+                distribution, pickup scanning, delivery confirmation (POD), invoicing, and QuickBooks posting.
+            </p>
+            <ul>
+                <li>Developed order creation & distribution modules</li>
+                <li>Integrated QuickBooks and automated email notifications</li>
+                <li>Managed Agile sprints, code reviews, and CI/CD</li>
+                <li>Configured AWS, Google Cloud Console & Azure services</li>
+            </ul>
+            <span>Angular | Node.js | MySQL | AWS | Azure | GCP</span>
+        </div>
+
+        <div class="project">
+            <h4>BRIOS – VOSS Training Services, UK</h4>
+            <p>
+                Training management system handling candidates, tutors, attendance,
+                certification, invoicing, and Sage posting.
+            </p>
+            <ul>
+                <li>Developed course & attendance modules</li>
+                <li>Integrated Sage accounting with email automation</li>
+                <li>Handled Agile processes and documentation</li>
+            </ul>
+            <span>Angular | Node.js | MySQL | AWS | Sage</span>
+        </div>
+
+        <div class="project">
+            <h4>Aahhaa – Restaurant Management System</h4>
+            <p>
+                POS-based restaurant management system covering dine-in, takeaway,
+                catering, billing, inventory, and production management.
+            </p>
+            <ul>
+                <li>Developed POS, inventory, and production modules</li>
+                <li>Integrated Pine Labs & Paytm payment gateways</li>
+                <li>Built Electron-based desktop POS application</li>
+            </ul>
+            <span>Angular | Electron | Node.js | MySQL | AWS</span>
+        </div>
+
+        <div class="project">
+            <h4>Jewel Mate & RJDayBook – Rathna Jewellers</h4>
+            <p>
+                Inventory and accounting solutions for gold & silver ornaments,
+                employee management, attendance, and ledger reporting.
+            </p>
+            <span>WPF | Angular | Node.js | MySQL | AWS</span>
+        </div>
+
+        <div class="project">
+            <h4>Payroll Management System</h4>
+            <p>
+                HR & payroll automation system with attendance tracking,
+                statutory calculations, and automated payslip delivery.
+            </p>
+            <span>Angular | Node.js | MySQL | AWS</span>
+        </div>
+
+        <div class="project">
+            <h4>blaackforestcakes – Online Cake Ordering System</h4>
+            <p>
+                E-commerce platform with admin, kitchen, driver panels,
+                distance-based delivery charges, and UPI payments.
+            </p>
+            <span>Angular | Laravel | Razorpay | Google Maps API</span>
+        </div>
+
+        <div class="project">
+            <h4>My Happy Plays – Kids Toys E-commerce</h4>
+            <p>
+                E-commerce website for kids toys with secure payments,
+                order tracking, and admin management.
+            </p>
+            <span>Angular | Laravel | Razorpay | AWS</span>
+        </div>
+
     </div>
-    <div>
-      <b>Freelance Developer</b><br>
-      Delivered custom business web apps
-    </div>
-  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+<section class="section gray">
+    <div class="container">
+        <h3>Technical Skills</h3>
+        <div class="skills">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Laravel</span>
+            <span>Electron.js</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>AWS</span>
+        </div>
+    </div>
 </section>
 
-</div>
+<section class="section">
+    <div class="container">
+        <h3>Tools</h3>
+        <p>Git, Postman, VS Code, HeidiSQL, XAMPP, PuTTY, FileZilla</p>
+    </div>
+</section>
 
-<footer>
-  © 2026 — Palani
+<section class="section gray">
+    <div class="container">
+        <h3>Education</h3>
+
+        <div class="card">
+            <h4>B.Sc Computer Science</h4>
+            <span>N.M.S.S.N College (MKU) | 2014 – 2017</span>
+        </div>
+
+        <div class="card">
+            <h4>HSC & SSLC</h4>
+            <span>M.N.U Jayaraj Nagar Hr Sec School</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h3>Languages & Interests</h3>
+        <p><strong>Languages:</strong> Tamil, English</p>
+        <p><strong>Interests:</strong> Photoshop, Canva, Creative Design, Drawing, Games</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Palani Murugan A | Senior Software Engineer</p>
 </footer>
 
 </body>
